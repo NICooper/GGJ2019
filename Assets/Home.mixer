@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Home
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  - {fileID: 245797333797676720}
+  - {fileID: 245085795250299476}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 1f11b00eb6010e44aa6c06b0f87d4dd5
+    - 8bc57c882d7938c4ba2f176957e811a8
+    - 3dd11e676cb2e82438a4a8f46138826f
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1f11b00eb6010e44aa6c06b0f87d4dd5
+  m_Children:
+  - {fileID: 243698748849964106}
+  - {fileID: 243364185117685664}
+  m_Volume: 1704b1a0c57bcde43911921815eaec9c
+  m_Pitch: d940ad7bd25529d4eae7e6b7c2c04bc0
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: d05f49fcee0ade142adb7e9c1b1e0094
+  m_EffectName: Attenuation
+  m_MixLevel: 93c3b60865b1a7f41972cc2edcd77e5c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 638be3284ec007d4eb4f50b36477da09
+  m_FloatValues:
+    528d60d4f82ec1d498008599a89692b7: -0.0024418721
+    ee7f981ce65218448aa289a06cb6b90e: 0.025578514
+  m_TransitionOverrides: {}
+--- !u!243 &243364185117685664
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LivingRoom
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 8bc57c882d7938c4ba2f176957e811a8
+  m_Children: []
+  m_Volume: ee7f981ce65218448aa289a06cb6b90e
+  m_Pitch: ce763c469ff6fb745b211dd6ae841ccd
+  m_Effects:
+  - {fileID: 244718250606104542}
+  - {fileID: 244385697766684908}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243698748849964106
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kitchen
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3dd11e676cb2e82438a4a8f46138826f
+  m_Children: []
+  m_Volume: 528d60d4f82ec1d498008599a89692b7
+  m_Pitch: e4be03386d005ae4a8a3154e9a4a9348
+  m_Effects:
+  - {fileID: 244971170935302366}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244385697766684908
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 650a027717c285846b89e3830fdc7f4d
+  m_EffectName: Lowpass
+  m_MixLevel: 239f1ddc865291e49a7961f0b6b9288a
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: be234ca304033db48b5b98b017e20932
+  - m_ParameterName: Resonance
+    m_GUID: d6e4eb80a284f3949a455e066017cf82
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244718250606104542
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 0c170f2288a3a3f40bb5060fd358d39b
+  m_EffectName: Attenuation
+  m_MixLevel: a588d913e1e578645b635442719f6d54
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244971170935302366
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6ac2ea9429f0feb4ba9a1832ff438ed2
+  m_EffectName: Attenuation
+  m_MixLevel: ac5fac5e04cb37b4a982618415d4f438
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &245085795250299476
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kitchen
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 731bfd3a1f5db114dbb18b66ebb383dd
+  m_FloatValues:
+    528d60d4f82ec1d498008599a89692b7: -0.0024418721
+    ee7f981ce65218448aa289a06cb6b90e: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245797333797676720
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LivingRoom
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 48c365865af74d84da6774bc8584ef3b
+  m_FloatValues:
+    528d60d4f82ec1d498008599a89692b7: -80
+  m_TransitionOverrides: {}
